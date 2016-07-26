@@ -3,7 +3,10 @@ namespace Processwire;
 
 $params['cover'] = $page->cover->url;
 $params['title'] = $page->title;
-$params['description'] = ($page->about != '' ? $page->about : sprintf(__('A %d-post collection'), $blog->children("tags=$page")->count()));
+
+$params['description'] = ($page->about != '' ? $page->about : sprintf(__('A %d-post collection'),
+ 						  $blog->children("tags=$page")->count()));
+
 $params['blog_url'] = $blog_url;
 $params['logo'] = $blog_logo;
 

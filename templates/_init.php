@@ -16,13 +16,13 @@ $home = $pages->get('/');
 $templatesUrl = $config->urls->templates;
 $assets = $templatesUrl . 'assets/';
 
-$meta = $pages->get('/meta');
+$meta = $pages->get('template=meta');
 
 $title = $page->title;
 
 $meta_description = (($page->about && $page->about != '') ? $page->about : $meta->about);
 
-$blog = $pages->get('/blog');
+$blog = $pages->get('template=blog');
 
 $blog_title = $meta->title;
 
@@ -38,9 +38,9 @@ if($today > $copyright_year) {
 }
 
 
-$rss = $pages->get('/rss');
+$rss = $pages->get('template=rss');
 
-$authors = $pages->get('/authors');
+$authors = $pages->get('template=authors');
 
 $language = $user->language;
 
@@ -64,7 +64,7 @@ $bodyBag = ['blog' => $blog];
 
 $footerBag = [];
 
-$menu = $pages->get('/menu');
+$menu = $pages->get('template=menu');
 $current_menu_item = $menu->children->get("pointer=$page");
 
 $navigationBag = ['items' => $menu->children,

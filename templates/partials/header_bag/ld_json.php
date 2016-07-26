@@ -1,5 +1,5 @@
 <?php
-namespace Processwire
+namespace Processwire;
 ?>
 <script type="application/ld+json">
 	{

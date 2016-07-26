@@ -3,7 +3,7 @@ namespace Processwire;
 
 include_once __DIR__ . '/../helpers/excerpt.php';
 
-$authors = wire('pages')->get('/authors');
+$authors = wire('pages')->get('template=authors');
 $language = wire('user')->language;
 
 ?>

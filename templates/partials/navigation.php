@@ -1,5 +1,5 @@
 <?php 
-namespace Processwire 
+namespace Processwire; 
 ?>
 
 <div class="nav">
