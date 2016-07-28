@@ -19,7 +19,7 @@ $bodyBag['tags'] = $page->tags;
 $bodyBag['content'] = $page->content;
 $bodyBag['class'] = ($page->class->name != '' ? $page->class->name : 'post');
 $bodyBag['author'] = $page->author;
-$bodyBag['author_url'] = $authors->localHttpUrl($language) . $page->author->name;
+$bodyBag['author_url'] = $authors->localHttpUrl($language) . $page->author->nickname;
 $bodyBag['url'] = $page->httpUrl;
 $bodyBag['encoded_title'] = urlencode($page->title);
 $bodyBag['rss_subscription'] = true;

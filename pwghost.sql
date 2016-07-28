@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost:8889
--- Tiempo de generación: 26-07-2016 a las 18:05:17
+-- Tiempo de generación: 28-07-2016 a las 13:38:22
 -- Versión del servidor: 5.5.42
 -- Versión de PHP: 7.0.0
 
@@ -26,7 +26,7 @@ SET time_zone = "+00:00";
 -- Estructura de tabla para la tabla `caches`
 --
 -- Creación: 20-07-2016 a las 14:01:50
--- Última actualización: 26-07-2016 a las 15:53:06
+-- Última actualización: 28-07-2016 a las 11:36:33
 --
 
 CREATE TABLE `caches` (
@@ -45,26 +45,26 @@ INSERT INTO `caches` (`name`, `data`, `expires`) VALUES
 ('ModulesUninstalled.info', '{"AdminThemeReno":{"name":"AdminThemeReno","title":"Reno","version":17,"versionStr":"0.1.7","author":"Tom Reno (Renobird)","summary":"Admin theme for ProcessWire 2.5+ by Tom Reno (Renobird)","requiresVersions":{"AdminThemeDefault":[">=",0]},"autoload":"template=admin","created":1467939476,"installed":false,"configurable":3,"namespace":"ProcessWire\\\\","core":true},"FieldtypeCache":{"name":"FieldtypeCache","title":"Cache","version":101,"versionStr":"1.0.1","summary":"Caches the values of other fields for fewer runtime queries. Can also be used to combine multiple text fields and have them all be searchable under the cached field name.","created":1467939476,"installed":false,"namespace":"ProcessWire\\\\","core":true},"CommentFilterAkismet":{"name":"CommentFilterAkismet","title":"Comment Filter: Akismet","version":102,"versionStr":"1.0.2","summary":"Uses the Akismet service to identify comment spam. Module plugin for the Comments Fieldtype.","requiresVersions":{"FieldtypeComments":[">=",0]},"created":1467939476,"installed":false,"configurable":3,"namespace":"ProcessWire\\\\","core":true},"FieldtypeComments":{"name":"FieldtypeComments","title":"Comments","version":107,"versionStr":"1.0.7","summary":"Field that stores user posted comments for a single Page","installs":["InputfieldCommentsAdmin"],"created":1467939476,"installed":false,"namespace":"ProcessWire\\\\","core":true},"InputfieldCommentsAdmin":{"name":"InputfieldCommentsAdmin","title":"Comments Admin","version":104,"versionStr":"1.0.4","summary":"Provides an administrative interface for working with comments","requiresVersions":{"FieldtypeComments":[">=",0]},"created":1467939476,"installed":false,"namespace":"ProcessWire\\\\","core":true},"FieldtypeOptions":{"name":"FieldtypeOptions","title":"Select Options","version":1,"versionStr":"0.0.1","summary":"Field that stores single and multi select options.","created":1467939476,"installed":false,"namespace":"ProcessWire\\\\","core":true},"FieldtypePageTable":{"name":"FieldtypePageTable","title":"ProFields: Page Table","version":8,"versionStr":"0.0.8","summary":"A fieldtype containing a group of editable pages.","installs":["InputfieldPageTable"],"autoload":true,"created":1467939476,"installed":false,"namespace":"ProcessWire\\\\","core":true},"FieldtypeRepeater":{"name":"FieldtypeRepeater","title":"Repeater","version":105,"versionStr":"1.0.5","summary":"Maintains a collection of fields that are repeated for any number of times.","installs":["InputfieldRepeater"],"autoload":true,"created":1467939476,"installed":false,"configurable":3,"namespace":"ProcessWire\\\\","core":true},"InputfieldRepeater":{"name":"InputfieldRepeater","title":"Repeater","version":104,"versionStr":"1.0.4","summary":"Repeats fields from another template. Provides the input for FieldtypeRepeater.","requiresVersions":{"FieldtypeRepeater":[">=",0]},"created":1467939476,"installed":false,"namespace":"ProcessWire\\\\","core":true},"FieldtypeSelector":{"name":"FieldtypeSelector","title":"Selector","version":13,"versionStr":"0.1.3","author":"Avoine + ProcessWire","summary":"Build a page finding selector visually.","created":1467939476,"installed":false,"namespace":"ProcessWire\\\\","core":true},"FileCompilerTags":{"name":"FileCompilerTags","title":"Tags File Compiler","version":1,"versionStr":"0.0.1","summary":"Enables {var} or {var.property} variables in markup sections of a file. Can be used with any API variable.","created":1467939476,"installed":false,"configurable":4,"namespace":"ProcessWire\\\\","core":true},"ImageSizerEngineIMagick":{"name":"ImageSizerEngineIMagick","title":"IMagick Image Sizer","version":1,"versionStr":"0.0.1","author":"Horst Nogajski","summary":"Upgrades image manipulations to use PHP''s ImageMagick library when possible.","created":1467939476,"installed":false,"configurable":4,"namespace":"ProcessWire\\\\","core":true},"InputfieldPageTable":{"name":"InputfieldPageTable","title":"ProFields: Page Table","version":13,"versionStr":"0.1.3","summary":"Inputfield to accompany FieldtypePageTable","requiresVersions":{"FieldtypePageTable":[">=",0]},"created":1467939476,"installed":false,"namespace":"ProcessWire\\\\","core":true},"LazyCron":{"name":"LazyCron","title":"Lazy Cron","version":102,"versionStr":"1.0.2","summary":"Provides hooks that are automatically executed at various intervals. It is called ''lazy'' because it''s triggered by a pageview, so the interval is guaranteed to be at least the time requested, rather than exactly the time requested. This is fine for most cases, but you can make it not lazy by connecting this to a real CRON job. See the module file for details. ","href":"http:\\/\\/processwire.com\\/talk\\/index.php\\/topic,284.0.html","autoload":true,"singular":true,"created":1467939476,"installed":false,"namespace":"ProcessWire\\\\","core":true},"MarkupCache":{"name":"MarkupCache","title":"Markup Cache","version":101,"versionStr":"1.0.1","summary":"A simple way to cache segments of markup in your templates. ","href":"https:\\/\\/processwire.com\\/api\\/modules\\/markupcache\\/","autoload":true,"singular":true,"created":1467939476,"installed":false,"configurable":3,"namespace":"ProcessWire\\\\","core":true},"PageFrontEdit":{"name":"PageFrontEdit","title":"Front-End Page Editor","version":2,"versionStr":"0.0.2","author":"Ryan Cramer","summary":"Enables front-end editing of page fields.","icon":"cube","permissions":{"page-edit-front":"Use the front-end page editor"},"autoload":true,"created":1467939476,"installed":false,"configurable":"PageFrontEditConfig.php","namespace":"ProcessWire\\\\","core":true,"license":"MPL 2.0"},"PagePathHistory":{"name":"PagePathHistory","title":"Page Path History","version":2,"versionStr":"0.0.2","summary":"Keeps track of past URLs where pages have lived and automatically redirects (301 permament) to the new location whenever the past URL is accessed.","autoload":true,"singular":true,"created":1467939476,"installed":false,"namespace":"ProcessWire\\\\","core":true},"PagePaths":{"name":"PagePaths","title":"Page Paths","version":1,"versionStr":"0.0.1","summary":"Enables page paths\\/urls to be queryable by selectors. Also offers potential for improved load performance. Builds an index at install (may take time on a large site). Currently supports only single languages sites.","autoload":true,"singular":true,"created":1467939476,"installed":false,"namespace":"ProcessWire\\\\","core":true},"ProcessCommentsManager":{"name":"ProcessCommentsManager","title":"Comments","version":6,"versionStr":"0.0.6","author":"Ryan Cramer","summary":"Manage comments in your site outside of the page editor.","icon":"comments","requiresVersions":{"FieldtypeComments":[">=",0]},"permission":"comments-manager","permissions":{"comments-manager":"Use the comments manager"},"created":1467939476,"installed":false,"namespace":"ProcessWire\\\\","core":true,"page":{"name":"comments","parent":"setup","title":"Comments"},"nav":[{"url":"?go=approved","label":"Approved"},{"url":"?go=pending","label":"Pending"},{"url":"?go=spam","label":"Spam"},{"url":"?go=all","label":"All"}]},"ProcessForgotPassword":{"name":"ProcessForgotPassword","title":"Forgot Password","version":101,"versionStr":"1.0.1","summary":"Provides password reset\\/email capability for the Login process.","permission":"page-view","created":1467939476,"installed":false,"configurable":3,"namespace":"ProcessWire\\\\","core":true},"ProcessPageClone":{"name":"ProcessPageClone","title":"Page Clone","version":103,"versionStr":"1.0.3","summary":"Provides ability to clone\\/copy\\/duplicate pages in the admin. Adds a &quot;copy&quot; option to all applicable pages in the PageList.","permission":"page-clone","permissions":{"page-clone":"Clone a page","page-clone-tree":"Clone a tree of pages"},"autoload":"template=admin","created":1467939476,"installed":false,"namespace":"ProcessWire\\\\","core":true,"page":{"name":"clone","title":"Clone","parent":"page","status":1024}},"ProcessSessionDB":{"name":"ProcessSessionDB","title":"Sessions","version":3,"versionStr":"0.0.3","summary":"Enables you to browse active database sessions.","icon":"dashboard","requiresVersions":{"SessionHandlerDB":[">=",0]},"created":1467939476,"installed":false,"namespace":"ProcessWire\\\\","core":true},"SessionHandlerDB":{"name":"SessionHandlerDB","title":"Session Handler Database","version":5,"versionStr":"0.0.5","summary":"Installing this module makes ProcessWire store sessions in the database rather than the file system. Note that this module will log you out after install or uninstall.","installs":["ProcessSessionDB"],"created":1467939476,"installed":false,"configurable":3,"namespace":"ProcessWire\\\\","core":true},"FieldtypeNotifications":{"name":"FieldtypeNotifications","title":"Notifications","version":4,"versionStr":"0.0.4","summary":"Field that stores user notifications.","requiresVersions":{"SystemNotifications":[">=",0]},"created":1467939476,"installed":false,"namespace":"ProcessWire\\\\","core":true},"SystemNotifications":{"name":"SystemNotifications","title":"System Notifications","version":12,"versionStr":"0.1.2","summary":"Adds support for notifications in ProcessWire (currently in development)","icon":"bell","installs":["FieldtypeNotifications"],"autoload":true,"created":1467939476,"installed":false,"configurable":"SystemNotificationsConfig.php","namespace":"ProcessWire\\\\","core":true},"TextformatterMarkdownExtra":{"name":"TextformatterMarkdownExtra","title":"Markdown\\/Parsedown Extra","version":130,"versionStr":"1.3.0","summary":"Markdown\\/Parsedown extra lightweight markup language by Emanuil Rusev. Based on Markdown by John Gruber.","created":1467939476,"installed":false,"configurable":3,"namespace":"ProcessWire\\\\","core":true},"TextformatterNewlineBR":{"name":"TextformatterNewlineBR","title":"Newlines to XHTML Line Breaks","version":100,"versionStr":"1.0.0","summary":"Converts newlines to XHTML line break <br \\/> tags. ","created":1467939476,"installed":false,"namespace":"ProcessWire\\\\","core":true},"TextformatterNewlineUL":{"name":"TextformatterNewlineUL","title":"Newlines to Unordered List","version":100,"versionStr":"1.0.0","summary":"Converts newlines to <li> list items and surrounds in an <ul> unordered list. ","created":1467939476,"installed":false,"namespace":"ProcessWire\\\\","core":true},"TextformatterPstripper":{"name":"TextformatterPstripper","title":"Paragraph Stripper","version":100,"versionStr":"1.0.0","summary":"Strips paragraph <p> tags that may have been applied by other text formatters before it. ","created":1467939476,"installed":false,"namespace":"ProcessWire\\\\","core":true},"TextformatterSmartypants":{"name":"TextformatterSmartypants","title":"SmartyPants Typographer","version":152,"versionStr":"1.5.2","summary":"Smart typography for web sites, by Michel Fortin based on SmartyPants by John Gruber. If combined with Markdown, it should be applied AFTER Markdown.","created":1467939476,"installed":false,"namespace":"ProcessWire\\\\","core":true,"url":"http:\\/\\/michelf.com\\/projects\\/php-smartypants\\/typographer\\/"},"TextformatterStripTags":{"name":"TextformatterStripTags","title":"Strip Markup Tags","version":100,"versionStr":"1.0.0","summary":"Strips HTML\\/XHTML Markup Tags","created":1467939476,"installed":false,"configurable":3,"namespace":"ProcessWire\\\\","core":true},"Helloworld":{"name":"Helloworld","title":"Hello World","version":2,"versionStr":"0.0.2","summary":"An example module used for demonstration purposes. See the \\/site\\/modules\\/Helloworld.module file for details.","href":"http:\\/\\/processwire.com","icon":"smile-o","autoload":true,"singular":true,"created":1469023310,"installed":false}}', '2010-04-08 03:10:10'),
 ('Modules.site/modules/', 'Helloworld.module', '2010-04-08 03:10:10'),
 ('Modules.info', '{"148":{"name":"AdminThemeDefault","title":"Default","version":14,"autoload":"template=admin","created":1469070110,"configurable":19,"namespace":"ProcessWire\\\\"},"97":{"name":"FieldtypeCheckbox","title":"Checkbox","version":101,"singular":1,"created":1469070110,"namespace":"ProcessWire\\\\","permanent":true},"28":{"name":"FieldtypeDatetime","title":"Datetime","version":104,"created":1469070110,"namespace":"ProcessWire\\\\"},"29":{"name":"FieldtypeEmail","title":"E-Mail","version":100,"created":1469070110,"namespace":"ProcessWire\\\\"},"106":{"name":"FieldtypeFieldsetClose","title":"Fieldset (Close)","version":100,"singular":1,"created":1469070110,"namespace":"ProcessWire\\\\","permanent":true},"105":{"name":"FieldtypeFieldsetOpen","title":"Fieldset (Open)","version":100,"singular":1,"created":1469070110,"namespace":"ProcessWire\\\\","permanent":true},"107":{"name":"FieldtypeFieldsetTabOpen","title":"Fieldset in Tab (Open)","version":100,"singular":1,"created":1469070110,"namespace":"ProcessWire\\\\","permanent":true},"6":{"name":"FieldtypeFile","title":"Files","version":104,"created":1469070110,"namespace":"ProcessWire\\\\","permanent":true},"89":{"name":"FieldtypeFloat","title":"Float","version":105,"singular":1,"created":1469070110,"namespace":"ProcessWire\\\\","permanent":true},"57":{"name":"FieldtypeImage","title":"Images","version":101,"created":1469070110,"namespace":"ProcessWire\\\\","permanent":true},"84":{"name":"FieldtypeInteger","title":"Integer","version":101,"created":1469070110,"namespace":"ProcessWire\\\\","permanent":true},"27":{"name":"FieldtypeModule","title":"Module Reference","version":101,"created":1469070110,"namespace":"ProcessWire\\\\","permanent":true},"4":{"name":"FieldtypePage","title":"Page Reference","version":103,"created":1469070110,"configurable":3,"namespace":"ProcessWire\\\\","permanent":true},"111":{"name":"FieldtypePageTitle","title":"Page Title","version":100,"singular":1,"created":1469070110,"namespace":"ProcessWire\\\\","permanent":true},"133":{"name":"FieldtypePassword","title":"Password","version":101,"singular":true,"created":1469070110,"namespace":"ProcessWire\\\\","permanent":true},"3":{"name":"FieldtypeText","title":"Text","version":100,"created":1469070110,"namespace":"ProcessWire\\\\","permanent":true},"1":{"name":"FieldtypeTextarea","title":"Textarea","version":106,"created":1469070110,"namespace":"ProcessWire\\\\","permanent":true},"135":{"name":"FieldtypeURL","title":"URL","version":101,"singular":true,"created":1469070110,"namespace":"ProcessWire\\\\","permanent":true},"25":{"name":"InputfieldAsmSelect","title":"asmSelect","version":120,"created":1469070110,"namespace":"ProcessWire\\\\","permanent":true},"131":{"name":"InputfieldButton","title":"Button","version":100,"created":1469070110,"namespace":"ProcessWire\\\\","permanent":true},"37":{"name":"InputfieldCheckbox","title":"Checkbox","version":104,"created":1469070110,"namespace":"ProcessWire\\\\","permanent":true},"38":{"name":"InputfieldCheckboxes","title":"Checkboxes","version":107,"created":1469070110,"namespace":"ProcessWire\\\\","permanent":true},"155":{"name":"InputfieldCKEditor","title":"CKEditor","version":156,"installs":["MarkupHTMLPurifier"],"created":1469070110,"namespace":"ProcessWire\\\\"},"94":{"name":"InputfieldDatetime","title":"Datetime","version":105,"created":1469070110,"namespace":"ProcessWire\\\\","permanent":true},"80":{"name":"InputfieldEmail","title":"Email","version":101,"created":1469070110,"namespace":"ProcessWire\\\\"},"78":{"name":"InputfieldFieldset","title":"Fieldset","version":101,"created":1469070110,"namespace":"ProcessWire\\\\","permanent":true},"55":{"name":"InputfieldFile","title":"Files","version":124,"created":1469070110,"namespace":"ProcessWire\\\\","permanent":true},"90":{"name":"InputfieldFloat","title":"Float","version":103,"created":1469070110,"namespace":"ProcessWire\\\\","permanent":true},"30":{"name":"InputfieldForm","title":"Form","version":107,"created":1469070110,"namespace":"ProcessWire\\\\","permanent":true},"40":{"name":"InputfieldHidden","title":"Hidden","version":101,"created":1469070110,"namespace":"ProcessWire\\\\","permanent":true},"161":{"name":"InputfieldIcon","title":"Icon","version":2,"created":1469070139,"namespace":"ProcessWire\\\\"},"56":{"name":"InputfieldImage","title":"Images","version":119,"created":1469070110,"namespace":"ProcessWire\\\\","permanent":true},"85":{"name":"InputfieldInteger","title":"Integer","version":104,"created":1469070110,"namespace":"ProcessWire\\\\","permanent":true},"79":{"name":"InputfieldMarkup","title":"Markup","version":102,"created":1469070110,"namespace":"ProcessWire\\\\","permanent":true},"41":{"name":"InputfieldName","title":"Name","version":100,"created":1469070110,"namespace":"ProcessWire\\\\","permanent":true},"60":{"name":"InputfieldPage","title":"Page","version":106,"created":1469070110,"configurable":3,"namespace":"ProcessWire\\\\","permanent":true},"15":{"name":"InputfieldPageListSelect","title":"Page List Select","version":101,"created":1469070110,"namespace":"ProcessWire\\\\","permanent":true},"137":{"name":"InputfieldPageListSelectMultiple","title":"Page List Select Multiple","version":102,"created":1469070110,"namespace":"ProcessWire\\\\","permanent":true},"86":{"name":"InputfieldPageName","title":"Page Name","version":106,"created":1469070110,"configurable":3,"namespace":"ProcessWire\\\\","permanent":true},"112":{"name":"InputfieldPageTitle","title":"Page Title","version":102,"created":1469070110,"namespace":"ProcessWire\\\\","permanent":true},"122":{"name":"InputfieldPassword","title":"Password","version":101,"created":1469070110,"namespace":"ProcessWire\\\\","permanent":true},"39":{"name":"InputfieldRadios","title":"Radio Buttons","version":105,"created":1469070110,"namespace":"ProcessWire\\\\","permanent":true},"36":{"name":"InputfieldSelect","title":"Select","version":102,"created":1469070110,"namespace":"ProcessWire\\\\","permanent":true},"43":{"name":"InputfieldSelectMultiple","title":"Select Multiple","version":101,"created":1469070110,"namespace":"ProcessWire\\\\","permanent":true},"149":{"name":"InputfieldSelector","title":"Selector","version":27,"autoload":"template=admin","created":1469070110,"configurable":3,"namespace":"ProcessWire\\\\"},"32":{"name":"InputfieldSubmit","title":"Submit","version":102,"created":1469070110,"namespace":"ProcessWire\\\\","permanent":true},"34":{"name":"InputfieldText","title":"Text","version":105,"created":1469070110,"namespace":"ProcessWire\\\\","permanent":true},"35":{"name":"InputfieldTextarea","title":"Textarea","version":103,"created":1469070110,"namespace":"ProcessWire\\\\","permanent":true},"108":{"name":"InputfieldURL","title":"URL","version":102,"created":1469070110,"namespace":"ProcessWire\\\\"},"116":{"name":"JqueryCore","title":"jQuery Core","version":183,"singular":true,"created":1469070110,"namespace":"ProcessWire\\\\","permanent":true},"151":{"name":"JqueryMagnific","title":"jQuery Magnific Popup","version":1,"singular":1,"created":1469070110,"namespace":"ProcessWire\\\\"},"103":{"name":"JqueryTableSorter","title":"jQuery Table Sorter Plugin","version":221,"singular":1,"created":1469070110,"namespace":"ProcessWire\\\\"},"117":{"name":"JqueryUI","title":"jQuery UI","version":196,"singular":true,"created":1469070110,"namespace":"ProcessWire\\\\","permanent":true},"45":{"name":"JqueryWireTabs","title":"jQuery Wire Tabs Plugin","version":107,"created":1469070110,"configurable":3,"namespace":"ProcessWire\\\\","permanent":true},"167":{"name":"FieldtypePageTitleLanguage","title":"Page Title (Multi-Language)","version":100,"requiresVersions":{"LanguageSupportFields":[">=",0],"FieldtypeTextLanguage":[">=",0]},"singular":true,"created":1469070162,"namespace":"ProcessWire\\\\"},"168":{"name":"FieldtypeTextareaLanguage","title":"Textarea (Multi-language)","version":100,"requiresVersions":{"LanguageSupportFields":[">=",0]},"singular":true,"created":1469070162,"namespace":"ProcessWire\\\\"},"166":{"name":"FieldtypeTextLanguage","title":"Text (Multi-language)","version":100,"requiresVersions":{"LanguageSupportFields":[">=",0]},"singular":true,"created":1469070162,"namespace":"ProcessWire\\\\"},"162":{"name":"LanguageSupport","title":"Languages Support","version":103,"installs":["ProcessLanguage","ProcessLanguageTranslator"],"autoload":true,"singular":true,"created":1469070157,"configurable":true,"namespace":"ProcessWire\\\\"},"165":{"name":"LanguageSupportFields","title":"Languages Support - Fields","version":100,"requiresVersions":{"LanguageSupport":[">=",0]},"installs":["FieldtypePageTitleLanguage","FieldtypeTextareaLanguage","FieldtypeTextLanguage"],"autoload":true,"singular":true,"created":1469070162,"namespace":"ProcessWire\\\\"},"169":{"name":"LanguageSupportPageNames","title":"Languages Support - Page Names","version":9,"requiresVersions":{"LanguageSupport":[">=",0],"LanguageSupportFields":[">=",0]},"autoload":true,"singular":true,"created":1469070165,"configurable":3,"namespace":"ProcessWire\\\\"},"170":{"name":"LanguageTabs","title":"Languages Support - Tabs","version":114,"requiresVersions":{"LanguageSupport":[">=",0]},"autoload":"template=admin","singular":true,"created":1469070168,"configurable":4,"namespace":"ProcessWire\\\\"},"163":{"name":"ProcessLanguage","title":"Languages","version":103,"icon":"language","requiresVersions":{"LanguageSupport":[">=",0]},"permission":"lang-edit","singular":1,"created":1469070157,"configurable":3,"namespace":"ProcessWire\\\\","useNavJSON":true},"164":{"name":"ProcessLanguageTranslator","title":"Language Translator","version":101,"requiresVersions":{"LanguageSupport":[">=",0]},"permission":"lang-edit","singular":1,"created":1469070158,"namespace":"ProcessWire\\\\"},"67":{"name":"MarkupAdminDataTable","title":"Admin Data Table","version":107,"created":1469070110,"namespace":"ProcessWire\\\\","permanent":true},"156":{"name":"MarkupHTMLPurifier","title":"HTML Purifier","version":104,"created":1469070110,"namespace":"ProcessWire\\\\"},"113":{"name":"MarkupPageArray","title":"PageArray Markup","version":100,"autoload":true,"singular":true,"created":1469070110,"namespace":"ProcessWire\\\\"},"172":{"name":"MarkupPageFields","title":"Markup Page Fields","version":100,"autoload":true,"singular":true,"created":1469357115,"namespace":"ProcessWire\\\\","permanent":true},"98":{"name":"MarkupPagerNav","title":"Pager (Pagination) Navigation","version":104,"created":1469070110,"namespace":"ProcessWire\\\\"},"171":{"name":"MarkupRSS","title":"Markup RSS Feed","version":102,"created":1469357047,"configurable":3,"namespace":"ProcessWire\\\\"},"114":{"name":"PagePermissions","title":"Page Permissions","version":105,"autoload":true,"singular":true,"created":1469070110,"namespace":"ProcessWire\\\\","permanent":true},"115":{"name":"PageRender","title":"Page Render","version":105,"autoload":true,"singular":true,"created":1469070110,"configurable":3,"namespace":"ProcessWire\\\\","permanent":true},"48":{"name":"ProcessField","title":"Fields","version":112,"icon":"cube","permission":"field-admin","created":1469070110,"configurable":3,"namespace":"ProcessWire\\\\","permanent":true,"useNavJSON":true},"87":{"name":"ProcessHome","title":"Admin Home","version":101,"permission":"page-view","created":1469070110,"namespace":"ProcessWire\\\\","permanent":true},"76":{"name":"ProcessList","title":"List","version":101,"permission":"page-view","created":1469070110,"namespace":"ProcessWire\\\\","permanent":true},"160":{"name":"ProcessLogger","title":"Logs","version":1,"icon":"tree","permission":"logs-view","singular":1,"created":1469070139,"namespace":"ProcessWire\\\\","useNavJSON":true},"10":{"name":"ProcessLogin","title":"Login","version":103,"permission":"page-view","created":1469070110,"namespace":"ProcessWire\\\\","permanent":true},"50":{"name":"ProcessModule","title":"Modules","version":118,"permission":"module-admin","created":1469070110,"namespace":"ProcessWire\\\\","permanent":true,"useNavJSON":true,"nav":[{"url":"?site#tab_site_modules","label":"Site","icon":"plug","navJSON":"navJSON\\/?site=1"},{"url":"?core#tab_core_modules","label":"Core","icon":"plug","navJSON":"navJSON\\/?core=1"},{"url":"?configurable#tab_configurable_modules","label":"Configure","icon":"gear","navJSON":"navJSON\\/?configurable=1"},{"url":"?install#tab_install_modules","label":"Install","icon":"sign-in","navJSON":"navJSON\\/?install=1"},{"url":"?reset=1","label":"Refresh","icon":"refresh"}]},"17":{"name":"ProcessPageAdd","title":"Page Add","version":108,"icon":"plus-circle","permission":"page-edit","created":1469070110,"configurable":3,"namespace":"ProcessWire\\\\","permanent":true,"useNavJSON":true},"7":{"name":"ProcessPageEdit","title":"Page Edit","version":108,"icon":"edit","permission":"page-edit","singular":1,"created":1469070110,"configurable":3,"namespace":"ProcessWire\\\\","permanent":true,"useNavJSON":true},"129":{"name":"ProcessPageEditImageSelect","title":"Page Edit Image","version":120,"permission":"page-edit","singular":1,"created":1469070110,"configurable":3,"namespace":"ProcessWire\\\\","permanent":true},"121":{"name":"ProcessPageEditLink","title":"Page Edit Link","version":108,"icon":"link","permission":"page-edit","singular":true,"created":1469070110,"configurable":3,"namespace":"ProcessWire\\\\","permanent":true},"12":{"name":"ProcessPageList","title":"Page List","version":118,"icon":"sitemap","permission":"page-edit","created":1469070110,"configurable":3,"namespace":"ProcessWire\\\\","permanent":true,"useNavJSON":true},"150":{"name":"ProcessPageLister","title":"Lister","version":24,"icon":"search","permission":"page-lister","created":1469070110,"configurable":true,"namespace":"ProcessWire\\\\","permanent":true,"useNavJSON":true},"104":{"name":"ProcessPageSearch","title":"Page Search","version":106,"permission":"page-edit","singular":1,"created":1469070110,"configurable":3,"namespace":"ProcessWire\\\\","permanent":true},"14":{"name":"ProcessPageSort","title":"Page Sort and Move","version":100,"permission":"page-edit","created":1469070110,"namespace":"ProcessWire\\\\","permanent":true},"109":{"name":"ProcessPageTrash","title":"Page Trash","version":102,"singular":1,"created":1469070110,"namespace":"ProcessWire\\\\","permanent":true},"134":{"name":"ProcessPageType","title":"Page Type","version":101,"singular":1,"created":1469070110,"configurable":3,"namespace":"ProcessWire\\\\","permanent":true,"useNavJSON":true},"83":{"name":"ProcessPageView","title":"Page View","version":104,"permission":"page-view","created":1469070110,"namespace":"ProcessWire\\\\","permanent":true},"136":{"name":"ProcessPermission","title":"Permissions","version":101,"icon":"gear","permission":"permission-admin","singular":1,"created":1469070110,"configurable":3,"namespace":"ProcessWire\\\\","permanent":true,"useNavJSON":true},"138":{"name":"ProcessProfile","title":"User Profile","version":101,"permission":"profile-edit","singular":1,"created":1469070110,"configurable":3,"namespace":"ProcessWire\\\\","permanent":true},"159":{"name":"ProcessRecentPages","title":"Recent Pages","version":2,"icon":"clock-o","permission":"page-edit-recent","singular":1,"created":1469070135,"namespace":"ProcessWire\\\\","useNavJSON":true,"nav":[{"url":"?edited=1","label":"Edited","icon":"users","navJSON":"navJSON\\/?edited=1"},{"url":"?added=1","label":"Created","icon":"users","navJSON":"navJSON\\/?added=1&me=1"},{"url":"?edited=1&me=1","label":"Edited by me","icon":"user","navJSON":"navJSON\\/?edited=1&me=1"},{"url":"?added=1&me=1","label":"Created by me","icon":"user","navJSON":"navJSON\\/?added=1&me=1"},{"url":"another\\/","label":"Add another","icon":"plus-circle","navJSON":"anotherNavJSON\\/"}]},"68":{"name":"ProcessRole","title":"Roles","version":103,"icon":"gears","permission":"role-admin","created":1469070110,"configurable":3,"namespace":"ProcessWire\\\\","permanent":true,"useNavJSON":true},"47":{"name":"ProcessTemplate","title":"Templates","version":114,"icon":"cubes","permission":"template-admin","created":1469070110,"namespace":"ProcessWire\\\\","permanent":true,"useNavJSON":true},"66":{"name":"ProcessUser","title":"Users","version":107,"icon":"group","permission":"user-admin","created":1469070110,"configurable":"ProcessUserConfig.php","namespace":"ProcessWire\\\\","permanent":true,"useNavJSON":true},"125":{"name":"SessionLoginThrottle","title":"Session Login Throttle","version":102,"autoload":"function","singular":true,"created":1469070110,"configurable":3,"namespace":"ProcessWire\\\\"},"139":{"name":"SystemUpdater","title":"System Updater","version":15,"singular":true,"created":1469070110,"configurable":3,"namespace":"ProcessWire\\\\","permanent":true},"61":{"name":"TextformatterEntities","title":"HTML Entity Encoder (htmlspecialchars)","version":100,"created":1469070110,"namespace":"ProcessWire\\\\"},"173":{"name":"InputfieldPageAutocomplete","title":"Page Auto Complete","version":111,"namespace":"ProcessWire\\\\"}}', '2010-04-08 03:10:10'),
-('FileCompiler__c1078fb1a6625f25022bb7ec973cf66f', '{"source":{"file":"\\/Applications\\/MAMP\\/htdocs\\/ninjas\\/site\\/templates\\/authors.php","hash":"1c89086487f30002a1f1146f4f7f4240","size":1316,"time":1469536669,"ns":"Processwire"},"target":{"file":"\\/Applications\\/MAMP\\/htdocs\\/ninjas\\/site\\/assets\\/cache\\/FileCompiler\\/site\\/templates\\/authors.php","hash":"1c89086487f30002a1f1146f4f7f4240","size":1316,"time":1469536669}}', '2010-04-08 03:10:10'),
 ('Permissions.names', '{"lang-edit":1015,"logs-edit":1014,"logs-view":1013,"page-delete":34,"page-edit":32,"page-edit-recent":1011,"page-lister":1006,"page-lock":54,"page-move":35,"page-sort":50,"page-template":51,"page-view":36,"profile-edit":53,"user-admin":52}', '2010-04-08 03:10:10'),
 ('FileCompiler__723e0dafe080990babf5061dfe7eb00a', '{"source":{"file":"\\/Applications\\/MAMP\\/htdocs\\/ninjas\\/site\\/templates\\/admin.php","hash":"9636f854995462a4cb877cb1204bc2fe","size":467,"time":1467939476,"ns":"ProcessWire"},"target":{"file":"\\/Applications\\/MAMP\\/htdocs\\/ninjas\\/site\\/assets\\/cache\\/FileCompiler\\/site\\/templates\\/admin.php","hash":"9636f854995462a4cb877cb1204bc2fe","size":467,"time":1467939476}}', '2010-04-08 03:10:10'),
-('FileCompiler__403d227264a665bc50c199ca7637340a', '{"source":{"file":"\\/Applications\\/MAMP\\/htdocs\\/ninjas\\/site\\/templates\\/_init.php","hash":"6f844d9812e4d369af4199daf08250f4","size":2256,"time":1469538556,"ns":"Processwire"},"target":{"file":"\\/Applications\\/MAMP\\/htdocs\\/ninjas\\/site\\/assets\\/cache\\/FileCompiler\\/site\\/templates\\/_init.php","hash":"6f844d9812e4d369af4199daf08250f4","size":2256,"time":1469538556}}', '2010-04-08 03:10:10'),
 ('FileCompiler__02e22acbf09fe7de60ebc2f3cea361aa', '{"source":{"file":"\\/Applications\\/MAMP\\/htdocs\\/ninjas\\/site\\/templates\\/_main.php","hash":"5c8472068e367c3aa243d14439227abe","size":1073,"time":1469538923,"ns":"\\\\"},"target":{"file":"\\/Applications\\/MAMP\\/htdocs\\/ninjas\\/site\\/assets\\/cache\\/FileCompiler\\/site\\/templates\\/_main.php","hash":"1ef140c64fda31539153b534ad9f03fd","size":1733,"time":1469538923}}', '2010-04-08 03:10:10'),
-('FileCompiler__44ed1d90e6c4e7966e1546c116549ef9', '{"source":{"file":"\\/Applications\\/MAMP\\/htdocs\\/ninjas\\/site\\/templates\\/home.php","hash":"3148e83b4d419fc1d1d2cbb88c91b1ff","size":700,"time":1469536685,"ns":"Processwire"},"target":{"file":"\\/Applications\\/MAMP\\/htdocs\\/ninjas\\/site\\/assets\\/cache\\/FileCompiler\\/site\\/templates\\/home.php","hash":"3148e83b4d419fc1d1d2cbb88c91b1ff","size":700,"time":1469536685}}', '2010-04-08 03:10:10'),
+('FileCompiler__44ed1d90e6c4e7966e1546c116549ef9', '{"source":{"file":"\\/Applications\\/MAMP\\/htdocs\\/ninjas\\/site\\/templates\\/home.php","hash":"3148e83b4d419fc1d1d2cbb88c91b1ff","size":700,"time":1469703014,"ns":"Processwire"},"target":{"file":"\\/Applications\\/MAMP\\/htdocs\\/ninjas\\/site\\/assets\\/cache\\/FileCompiler\\/site\\/templates\\/home.php","hash":"3148e83b4d419fc1d1d2cbb88c91b1ff","size":700,"time":1469703014}}', '2010-04-08 03:10:10'),
 ('FileCompiler__0453f858be4054e59b6efb1bc4aa4c1c', '{"source":{"file":"views\\/home_view.php","hash":"a8cc6e647126d06947d10bd0712c0238","size":271,"time":1469374155,"ns":"\\\\"},"target":{"file":"\\/Applications\\/MAMP\\/htdocs\\/ninjas\\/site\\/assets\\/cache\\/FileCompiler\\/views\\/home_view.php","hash":"178bbec6bc9d405aa989572749764823","size":533,"time":1469374155}}', '2010-04-08 03:10:10'),
-('FileCompiler__97644c0d3e8ce67bab89306c677cf2d7', '{"source":{"file":"views\\/default_view.php","hash":"2a1ae846b387cf8c466e7723f9568034","size":2669,"time":1469547633,"ns":"Processwire"},"target":{"file":"\\/Applications\\/MAMP\\/htdocs\\/ninjas\\/site\\/assets\\/cache\\/FileCompiler\\/views\\/default_view.php","hash":"2a1ae846b387cf8c466e7723f9568034","size":2669,"time":1469547633}}', '2010-04-08 03:10:10');
+('FileCompiler__97644c0d3e8ce67bab89306c677cf2d7', '{"source":{"file":"views\\/default_view.php","hash":"2a1ae846b387cf8c466e7723f9568034","size":2669,"time":1469547633,"ns":"Processwire"},"target":{"file":"\\/Applications\\/MAMP\\/htdocs\\/ninjas\\/site\\/assets\\/cache\\/FileCompiler\\/views\\/default_view.php","hash":"2a1ae846b387cf8c466e7723f9568034","size":2669,"time":1469547633}}', '2010-04-08 03:10:10'),
+('FileCompiler__403d227264a665bc50c199ca7637340a', '{"source":{"file":"\\/Applications\\/MAMP\\/htdocs\\/ninjas\\/site\\/templates\\/_init.php","hash":"d3380f1e464116e19de5c081b81652e4","size":2296,"time":1469555864,"ns":"Processwire"},"target":{"file":"\\/Applications\\/MAMP\\/htdocs\\/ninjas\\/site\\/assets\\/cache\\/FileCompiler\\/site\\/templates\\/_init.php","hash":"d3380f1e464116e19de5c081b81652e4","size":2296,"time":1469555864}}', '2010-04-08 03:10:10'),
+('FileCompiler__c1078fb1a6625f25022bb7ec973cf66f', '{"source":{"file":"\\/Applications\\/MAMP\\/htdocs\\/ninjas\\/site\\/templates\\/authors.php","hash":"0ee0e15d1c8b1777c5f826ff9311d7b7","size":1320,"time":1469703388,"ns":"Processwire"},"target":{"file":"\\/Applications\\/MAMP\\/htdocs\\/ninjas\\/site\\/assets\\/cache\\/FileCompiler\\/site\\/templates\\/authors.php","hash":"0ee0e15d1c8b1777c5f826ff9311d7b7","size":1320,"time":1469703388}}', '2010-04-08 03:10:10');
 INSERT INTO `caches` (`name`, `data`, `expires`) VALUES
 ('FileCompiler__25182cef6175e68124787c25a99a42f7', '{"source":{"file":"\\/Applications\\/MAMP\\/htdocs\\/ninjas\\/site\\/templates\\/rss.php","hash":"2cb14cc9a79ae832dd4925cbee8d5ddc","size":761,"time":1469537002,"ns":"Processwire"},"target":{"file":"\\/Applications\\/MAMP\\/htdocs\\/ninjas\\/site\\/assets\\/cache\\/FileCompiler\\/site\\/templates\\/rss.php","hash":"2cb14cc9a79ae832dd4925cbee8d5ddc","size":761,"time":1469537002}}', '2010-04-08 03:10:10'),
-('FileCompiler__d0231c3806f8a8223bb7bc9b12b64e19', '{"source":{"file":"\\/Applications\\/MAMP\\/htdocs\\/ninjas\\/site\\/templates\\/blog-item.php","hash":"37b6ad8f5ea10a471c893ec42ba3cdcb","size":1619,"time":1469535455,"ns":"Processwire"},"target":{"file":"\\/Applications\\/MAMP\\/htdocs\\/ninjas\\/site\\/assets\\/cache\\/FileCompiler\\/site\\/templates\\/blog-item.php","hash":"37b6ad8f5ea10a471c893ec42ba3cdcb","size":1619,"time":1469535455}}', '2010-04-08 03:10:10'),
+('FileCompiler__d0231c3806f8a8223bb7bc9b12b64e19', '{"source":{"file":"\\/Applications\\/MAMP\\/htdocs\\/ninjas\\/site\\/templates\\/blog-item.php","hash":"a8221f584723398aa814fa829fb2e4d7","size":1623,"time":1469703434,"ns":"Processwire"},"target":{"file":"\\/Applications\\/MAMP\\/htdocs\\/ninjas\\/site\\/assets\\/cache\\/FileCompiler\\/site\\/templates\\/blog-item.php","hash":"a8221f584723398aa814fa829fb2e4d7","size":1623,"time":1469703434}}', '2010-04-08 03:10:10'),
 ('FileCompiler__59ac674cf4f48260219045820a9f0435', '{"source":{"file":"\\/Applications\\/MAMP\\/htdocs\\/ninjas\\/site\\/templates\\/blog.php","hash":"25796fe6c81fae44b560b1f558ac008c","size":65,"time":1469472619,"ns":"Processwire"},"target":{"file":"\\/Applications\\/MAMP\\/htdocs\\/ninjas\\/site\\/assets\\/cache\\/FileCompiler\\/site\\/templates\\/blog.php","hash":"25796fe6c81fae44b560b1f558ac008c","size":65,"time":1469472619}}', '2010-04-08 03:10:10'),
-('FileCompiler__fe72cdf992d59d97dcbbe23ce625fd47', '{"source":{"file":"\\/Applications\\/MAMP\\/htdocs\\/ninjas\\/site\\/templates\\/tag-item.php","hash":"af5b6d34b4d5d4ecc045b2858f4e6d2a","size":873,"time":1469536750,"ns":"Processwire"},"target":{"file":"\\/Applications\\/MAMP\\/htdocs\\/ninjas\\/site\\/assets\\/cache\\/FileCompiler\\/site\\/templates\\/tag-item.php","hash":"af5b6d34b4d5d4ecc045b2858f4e6d2a","size":873,"time":1469536750}}', '2010-04-08 03:10:10'),
+('FileCompiler__fe72cdf992d59d97dcbbe23ce625fd47', '{"source":{"file":"\\/Applications\\/MAMP\\/htdocs\\/ninjas\\/site\\/templates\\/tag-item.php","hash":"c2ec31c81acce81039e646e21e738688","size":884,"time":1469556153,"ns":"Processwire"},"target":{"file":"\\/Applications\\/MAMP\\/htdocs\\/ninjas\\/site\\/assets\\/cache\\/FileCompiler\\/site\\/templates\\/tag-item.php","hash":"c2ec31c81acce81039e646e21e738688","size":884,"time":1469556153}}', '2010-04-08 03:10:10'),
 ('FileCompiler__705b0deab807b3ea45bb21db4d3dccab', '{"source":{"file":"\\/Applications\\/MAMP\\/htdocs\\/ninjas\\/site\\/templates\\/tags.php","hash":"a75e538c038a7a709ee8d236acab1f04","size":120,"time":1469534812,"ns":"Processwire"},"target":{"file":"\\/Applications\\/MAMP\\/htdocs\\/ninjas\\/site\\/assets\\/cache\\/FileCompiler\\/site\\/templates\\/tags.php","hash":"a75e538c038a7a709ee8d236acab1f04","size":120,"time":1469534812}}', '2010-04-08 03:10:10'),
 ('FileCompiler__44ed57367874421066f38e308d385d2e', '{"source":{"file":"partials\\/header_bag\\/facebook_og.php","hash":"d8fa1091d9ec2219887a12651b06a72e","size":396,"time":1469538294,"ns":"Processwire"},"target":{"file":"\\/Applications\\/MAMP\\/htdocs\\/ninjas\\/site\\/assets\\/cache\\/FileCompiler\\/partials\\/header_bag\\/facebook_og.php","hash":"d8fa1091d9ec2219887a12651b06a72e","size":396,"time":1469538294}}', '2010-04-08 03:10:10'),
 ('FileCompiler__f1eae3a941a1db9fe391ed0ca5c14645', '{"source":{"file":"partials\\/header_bag\\/twitter_card.php","hash":"9dc18034671c4c661726f95c3557a8b7","size":412,"time":1469538286,"ns":"Processwire"},"target":{"file":"\\/Applications\\/MAMP\\/htdocs\\/ninjas\\/site\\/assets\\/cache\\/FileCompiler\\/partials\\/header_bag\\/twitter_card.php","hash":"9dc18034671c4c661726f95c3557a8b7","size":412,"time":1469538286}}', '2010-04-08 03:10:10'),
-('FileCompiler__5bd6aab16882f77d8e4c1cad16414217', '{"source":{"file":"partials\\/header_bag\\/ld_json.php","hash":"4c630e2088f74198417af58e65d68917","size":314,"time":1469538529,"ns":"\\\\"},"target":{"file":"\\/Applications\\/MAMP\\/htdocs\\/ninjas\\/site\\/assets\\/cache\\/FileCompiler\\/partials\\/header_bag\\/ld_json.php","hash":"4c630e2088f74198417af58e65d68917","size":314,"time":1469538529}}', '2010-04-08 03:10:10'),
+('FileCompiler__5bd6aab16882f77d8e4c1cad16414217', '{"source":{"file":"partials\\/header_bag\\/ld_json.php","hash":"ec2a9e4254ec715ad27520f20c1a72e6","size":315,"time":1469556016,"ns":"Processwire"},"target":{"file":"\\/Applications\\/MAMP\\/htdocs\\/ninjas\\/site\\/assets\\/cache\\/FileCompiler\\/partials\\/header_bag\\/ld_json.php","hash":"ec2a9e4254ec715ad27520f20c1a72e6","size":315,"time":1469556016}}', '2010-04-08 03:10:10'),
 ('FileCompiler__1e54c7ddf11668c5ad8e99c24c4c35e5', '{"source":{"file":"\\/Applications\\/MAMP\\/htdocs\\/ninjas\\/site\\/templates\\/404.php","hash":"776335e998685378d206df77558cd244","size":130,"time":1469540061,"ns":"Processwire"},"target":{"file":"\\/Applications\\/MAMP\\/htdocs\\/ninjas\\/site\\/assets\\/cache\\/FileCompiler\\/site\\/templates\\/404.php","hash":"776335e998685378d206df77558cd244","size":130,"time":1469540061}}', '2010-04-08 03:10:10'),
 ('FileCompiler__447f9ae099040309615d21f802f83a52', '{"source":{"file":"\\/Applications\\/MAMP\\/htdocs\\/ninjas\\/site\\/templates\\/basic-page.php","hash":"c49406e21d994c3bdc5d321ecaa40ad6","size":620,"time":1469546720,"ns":"Processwire"},"target":{"file":"\\/Applications\\/MAMP\\/htdocs\\/ninjas\\/site\\/assets\\/cache\\/FileCompiler\\/site\\/templates\\/basic-page.php","hash":"c49406e21d994c3bdc5d321ecaa40ad6","size":620,"time":1469546720}}', '2010-04-08 03:10:10'),
-('FileCompiler__e4ee91d7ed4a35ba9dbfed208042bb27', '{"source":{"file":"partials\\/navigation.php","hash":"84c3d5cc7c15d174ac2a6ee9a25272fa","size":1743,"time":1469548308,"ns":"Processwire \\n?>\\n\\n<div class=\\"nav\\">\\n    <h3 class=\\"nav-title\\"><?php echo __(''Menu'') ?><\\/h3>\\n    <a href=\\"#\\" class=\\"nav-close\\">\\n        <span class=\\"hidden\\"><?php echo __(''Close'') ?><\\/span>\\n    <\\/a>\\n    <ul>\\n        <?php foreach($items as $item): ?>\\n            <li class=\\"nav-<?php echo $item->name ?><?php if($item == $current_item): ?> nav-current <?php endif ?>\\" role=\\"presentation\\"><a href=\\"<?php echo $item->pointer->localHttpUrl(wire(''user'')->language) ?>\\"><?php echo $item->title ?><\\/a><\\/li>\\n        <?php endforeach ?>\\n    <\\/ul>\\n\\n    <ul id=\\"language-selection\\">\\n        <?php\\n\\n        if(wire(''languages'')->count() > 1) { \\n\\n            foreach(wire(''languages'') as $language) {\\n\\n                $selected = ''''"},"target":{"file":"\\/Applications\\/MAMP\\/htdocs\\/ninjas\\/site\\/assets\\/cache\\/FileCompiler\\/partials\\/navigation.php","hash":"84c3d5cc7c15d174ac2a6ee9a25272fa","size":1743,"time":1469548308}}', '2010-04-08 03:10:10');
+('FileCompiler__e4ee91d7ed4a35ba9dbfed208042bb27', '{"source":{"file":"partials\\/navigation.php","hash":"202dc987f902276f4e041fd686d06025","size":1744,"time":1469556020,"ns":"Processwire"},"target":{"file":"\\/Applications\\/MAMP\\/htdocs\\/ninjas\\/site\\/assets\\/cache\\/FileCompiler\\/partials\\/navigation.php","hash":"202dc987f902276f4e041fd686d06025","size":1744,"time":1469556020}}', '2010-04-08 03:10:10');
 
 -- --------------------------------------------------------
 
@@ -111,7 +111,7 @@ INSERT INTO `fieldgroups` (`id`, `name`) VALUES
 -- Estructura de tabla para la tabla `fieldgroups_fields`
 --
 -- Creación: 20-07-2016 a las 14:01:50
--- Última actualización: 26-07-2016 a las 15:17:36
+-- Última actualización: 28-07-2016 a las 11:04:03
 --
 
 CREATE TABLE `fieldgroups_fields` (
@@ -127,16 +127,15 @@ CREATE TABLE `fieldgroups_fields` (
 
 INSERT INTO `fieldgroups_fields` (`fieldgroups_id`, `fields_id`, `sort`, `data`) VALUES
 (2, 2, 1, NULL),
-(3, 102, 7, NULL),
-(3, 92, 2, NULL),
+(3, 92, 3, NULL),
 (4, 5, 0, NULL),
 (5, 1, 0, NULL),
-(3, 106, 5, NULL),
+(3, 105, 1, NULL),
 (83, 1, 0, NULL),
 (1, 1, 0, NULL),
 (97, 1, 0, NULL),
 (97, 97, 1, NULL),
-(3, 3, 1, NULL),
+(3, 102, 8, NULL),
 (2, 1, 0, NULL),
 (1, 100, 2, NULL),
 (97, 98, 2, NULL),
@@ -145,8 +144,9 @@ INSERT INTO `fieldgroups_fields` (`fieldgroups_id`, `fields_id`, `sort`, `data`)
 (100, 1, 0, NULL),
 (101, 100, 2, NULL),
 (101, 1, 0, NULL),
-(3, 100, 6, NULL),
-(3, 99, 4, NULL),
+(3, 4, 4, NULL),
+(3, 99, 5, NULL),
+(3, 106, 6, NULL),
 (102, 1, 0, NULL),
 (103, 100, 2, NULL),
 (103, 1, 0, NULL),
@@ -166,20 +166,21 @@ INSERT INTO `fieldgroups_fields` (`fieldgroups_id`, `fields_id`, `sort`, `data`)
 (1, 102, 1, NULL),
 (99, 1, 0, NULL),
 (106, 101, 3, NULL),
-(3, 4, 3, NULL),
-(3, 105, 0, NULL),
+(3, 100, 7, NULL),
+(3, 3, 2, NULL),
 (106, 102, 1, NULL),
 (107, 1, 0, NULL),
 (108, 1, 0, NULL),
 (105, 115, 8, NULL),
 (106, 118, 4, NULL),
-(3, 108, 8, NULL),
-(3, 107, 9, NULL),
+(3, 119, 0, '{"description":"Used in the URL","description1019":"Usado en la URL","notes":"Example author","notes1019":"Ejemplo autor"}'),
 (100, 100, 1, NULL),
 (109, 1, 0, NULL),
 (83, 100, 1, NULL),
 (83, 102, 2, NULL),
-(83, 113, 3, NULL);
+(83, 113, 3, NULL),
+(3, 108, 9, NULL),
+(3, 107, 10, NULL);
 
 -- --------------------------------------------------------
 
@@ -187,7 +188,7 @@ INSERT INTO `fieldgroups_fields` (`fieldgroups_id`, `fields_id`, `sort`, `data`)
 -- Estructura de tabla para la tabla `fields`
 --
 -- Creación: 20-07-2016 a las 14:01:50
--- Última actualización: 26-07-2016 a las 15:12:06
+-- Última actualización: 28-07-2016 a las 11:05:33
 --
 
 CREATE TABLE `fields` (
@@ -197,7 +198,7 @@ CREATE TABLE `fields` (
   `flags` int(11) NOT NULL DEFAULT '0',
   `label` varchar(250) NOT NULL DEFAULT '',
   `data` text NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=119 DEFAULT CHARSET=utf8mb4;
+) ENGINE=MyISAM AUTO_INCREMENT=120 DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `fields`
@@ -217,6 +218,7 @@ INSERT INTO `fields` (`id`, `type`, `name`, `flags`, `label`, `data`) VALUES
 (101, 'FieldtypeImage', 'logo', 0, 'Logo', '{"label1019":"Logo","extensions":"gif jpg jpeg png svg","maxFiles":1,"outputFormat":2,"defaultValuePage":0,"inputfieldClass":"InputfieldImage","descriptionRows":1,"gridMode":"grid","maxReject":0,"tags":"image","icon":"camera","fileSchema":2,"collapsed":0}'),
 (102, 'FieldtypeTextareaLanguage', 'about', 0, 'About', '{"label1019":"Acerca","inputfieldClass":"InputfieldTextarea","contentType":1,"htmlOptions":[4,8],"langBlankInherit":0,"collapsed":0,"rows":5,"tags":"text","icon":"comment"}'),
 (103, 'FieldtypePage', 'pointer', 0, 'Related Page', '{"label1019":"P\\u00e1gina Asociada","derefAsPage":2,"collapsed":0,"parent_id":0,"labelFieldName":"title","inputfield":"InputfieldPageListSelect","findPagesSelector":"template!=menu|menu-item|user|admin|language|permission|role","usePageEdit":0,"tags":"menu","icon":"leanpub","allowUnpub":1}'),
+(119, 'FieldtypeText', 'nickname', 0, 'Nickname', '{"label1019":"Pseud\\u00f3nimo","size":0,"maxlength":2048,"tags":"author","icon":"star","required":1,"requiredAttr":1,"noRelative":0,"allowIDN":0,"allowQuotes":0,"addRoot":0}'),
 (105, 'FieldtypeText', 'fullname', 0, 'Full Name', '{"label1019":"Nombre Completo","textformatters":["TextformatterEntities"],"collapsed":0,"size":0,"maxlength":2048,"tags":"user","icon":"child"}'),
 (106, 'FieldtypeImage', 'picture', 0, 'Picture', '{"label1019":"Fotograf\\u00eda","extensions":"gif jpg jpeg png svg","maxFiles":1,"outputFormat":2,"defaultValuePage":0,"inputfieldClass":"InputfieldImage","descriptionRows":1,"gridMode":"grid","maxReject":0,"tags":"image","icon":"camera","fileSchema":2,"collapsed":0}'),
 (107, 'FieldtypeURL', 'website', 0, 'Website', '{"label1019":"Sitio web","noRelative":0,"allowIDN":1,"allowQuotes":0,"addRoot":1,"collapsed":0,"size":0,"maxlength":1024,"tags":"user","icon":"globe","textformatters":["TextformatterEntities"]}'),
@@ -345,7 +347,7 @@ INSERT INTO `field_content` (`pages_id`, `data`, `data1019`) VALUES
 -- Estructura de tabla para la tabla `field_cover`
 --
 -- Creación: 23-07-2016 a las 16:19:37
--- Última actualización: 26-07-2016 a las 15:34:36
+-- Última actualización: 28-07-2016 a las 11:03:33
 --
 
 CREATE TABLE `field_cover` (
@@ -609,10 +611,35 @@ INSERT INTO `field_logo` (`pages_id`, `data`, `sort`, `description`, `modified`,
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `field_nickname`
+--
+-- Creación: 28-07-2016 a las 11:05:11
+-- Última actualización: 28-07-2016 a las 11:05:11
+-- Última revisión: 28-07-2016 a las 11:05:11
+--
+
+CREATE TABLE `field_nickname` (
+  `pages_id` int(10) unsigned NOT NULL,
+  `data` text NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `field_nickname`
+--
+
+INSERT INTO `field_nickname` (`pages_id`, `data`) VALUES
+(1039, 'edgar.rice'),
+(41, 'ghost.writer'),
+(1042, 'lewis.carroll'),
+(1036, 'martin.luther.king');
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `field_pass`
 --
 -- Creación: 20-07-2016 a las 14:01:50
--- Última actualización: 26-07-2016 a las 15:01:36
+-- Última actualización: 28-07-2016 a las 10:50:04
 --
 
 CREATE TABLE `field_pass` (
@@ -626,7 +653,7 @@ CREATE TABLE `field_pass` (
 --
 
 INSERT INTO `field_pass` (`pages_id`, `data`, `salt`) VALUES
-(41, 'lywkRC1R5Dktz0eClXA6OXAmM9DxhDC', '$2y$11$r.M.oXgDde2R5YvaL29K6O'),
+(41, 'KnUt3ENX0DZV82OyNuEAuZ03lzHEiQG', '$2y$11$ZHLd0M4AE5WSqq/tMIzuTe'),
 (40, '', ''),
 (1036, 'KGfYJsGdsY0zbweM/hCG2IuTk.OPDhy', '$2y$11$PEZszTRwkgIASJJ2styZ4e'),
 (1039, 'ooFp2P8vWdtXk.GVHohV6JaEg0HXu06', '$2y$11$95K8AG1G5CmxwuTQg2iAd.'),
@@ -672,7 +699,7 @@ INSERT INTO `field_permissions` (`pages_id`, `data`, `sort`) VALUES
 -- Estructura de tabla para la tabla `field_picture`
 --
 -- Creación: 23-07-2016 a las 17:45:18
--- Última actualización: 26-07-2016 a las 15:34:36
+-- Última actualización: 28-07-2016 a las 11:03:33
 --
 
 CREATE TABLE `field_picture` (
@@ -1094,7 +1121,7 @@ INSERT INTO `modules` (`id`, `class`, `flags`, `data`, `created`) VALUES
 -- Estructura de tabla para la tabla `pages`
 --
 -- Creación: 20-07-2016 a las 14:03:32
--- Última actualización: 26-07-2016 a las 16:04:06
+-- Última actualización: 28-07-2016 a las 11:03:33
 --
 
 CREATE TABLE `pages` (
@@ -1142,7 +1169,7 @@ INSERT INTO `pages` (`id`, `parent_id`, `templates_id`, `name`, `status`, `modif
 (36, 31, 5, 'page-view', 25, '2016-07-20 14:01:50', 41, '2016-07-20 14:01:50', 2, '2016-07-21 00:01:50', 0, NULL, 1),
 (37, 30, 4, 'guest', 25, '2016-07-20 14:01:50', 41, '2016-07-20 14:01:50', 2, '2016-07-21 00:01:50', 0, NULL, 1),
 (38, 30, 4, 'superuser', 25, '2016-07-20 14:01:50', 41, '2016-07-20 14:01:50', 2, '2016-07-21 00:01:50', 1, NULL, 1),
-(41, 29, 3, 'ghost', 1, '2016-07-26 15:34:28', 41, '2016-07-20 14:01:50', 2, '2016-07-21 00:01:50', 0, NULL, 1),
+(41, 29, 3, 'ghost', 1, '2016-07-28 11:03:06', 41, '2016-07-20 14:01:50', 2, '2016-07-21 00:01:50', 0, NULL, 1),
 (40, 29, 3, 'guest', 25, '2016-07-20 14:02:38', 41, '2016-07-20 14:01:50', 2, '2016-07-21 00:01:50', 1, NULL, 1),
 (50, 31, 5, 'page-sort', 25, '2016-07-20 14:01:50', 41, '2016-07-20 14:01:50', 41, '2016-07-21 00:01:50', 5, NULL, 1),
 (51, 31, 5, 'page-template', 25, '2016-07-20 14:01:50', 41, '2016-07-20 14:01:50', 41, '2016-07-21 00:01:50', 6, NULL, 1),
@@ -1182,10 +1209,10 @@ INSERT INTO `pages` (`id`, `parent_id`, `templates_id`, `name`, `status`, `modif
 (1033, 1, 54, 'rss', 1, '2016-07-26 15:12:49', 41, '2016-07-24 16:26:19', 41, '2016-07-25 02:26:19', 8, NULL, 1),
 (1034, 1022, 47, 'fables', 1, '2016-07-25 21:17:32', 41, '2016-07-25 18:44:48', 41, '2016-07-26 04:44:53', 1, NULL, 1),
 (1035, 1027, 51, 'the-purpose-of-education', 1, '2016-07-26 10:21:25', 41, '2016-07-25 19:50:32', 41, '2016-07-26 05:52:43', 1, NULL, 1),
-(1039, 29, 3, 'edgar', 1, '2016-07-26 14:48:56', 41, '2016-07-26 14:47:52', 41, '2016-07-27 00:48:56', 3, NULL, 1),
-(1036, 29, 3, 'martinlk', 1, '2016-07-25 20:19:57', 41, '2016-07-25 20:18:13', 41, '2016-07-26 06:19:57', 2, NULL, 1),
+(1039, 29, 3, 'edgar', 1, '2016-07-28 10:59:39', 41, '2016-07-26 14:47:52', 41, '2016-07-27 00:48:56', 3, NULL, 1),
+(1036, 29, 3, 'martinlk', 1, '2016-07-28 11:03:23', 41, '2016-07-25 20:18:13', 41, '2016-07-26 06:19:57', 2, NULL, 1),
 (1041, 1022, 47, 'fiction', 1, '2016-07-26 14:53:01', 41, '2016-07-26 14:52:18', 41, '2016-07-27 00:53:01', 2, 'ficcion', 1),
-(1042, 29, 3, 'lewis', 1, '2016-07-26 15:01:20', 41, '2016-07-26 15:00:10', 41, '2016-07-27 01:01:20', 4, NULL, 1),
+(1042, 29, 3, 'lewis', 1, '2016-07-28 11:03:15', 41, '2016-07-26 15:00:10', 41, '2016-07-27 01:01:20', 4, NULL, 1),
 (1043, 1027, 51, 'down-the-rabbit-hole', 1, '2016-07-26 15:04:31', 41, '2016-07-26 15:01:56', 41, '2016-07-27 01:04:31', 3, NULL, 1),
 (1044, 1020, 45, 'fiction', 1, '2016-07-26 15:07:02', 41, '2016-07-26 15:06:48', 41, '2016-07-27 01:07:02', 2, 'ficcion', 1),
 (1045, 1, 29, 'about', 1, '2016-07-26 15:36:05', 41, '2016-07-26 15:26:30', 41, '2016-07-27 01:28:04', 10, 'acerca', 1),
@@ -1294,7 +1321,7 @@ CREATE TABLE `pages_sortfields` (
 -- Estructura de tabla para la tabla `session_login_throttle`
 --
 -- Creación: 20-07-2016 a las 14:01:50
--- Última actualización: 26-07-2016 a las 10:14:50
+-- Última actualización: 28-07-2016 a las 10:50:04
 --
 
 CREATE TABLE `session_login_throttle` (
@@ -1308,7 +1335,7 @@ CREATE TABLE `session_login_throttle` (
 --
 
 INSERT INTO `session_login_throttle` (`name`, `attempts`, `last_attempt`) VALUES
-('ninja', 1, 1469528061);
+('ghost', 1, 1469703003);
 
 -- --------------------------------------------------------
 
@@ -1316,7 +1343,7 @@ INSERT INTO `session_login_throttle` (`name`, `attempts`, `last_attempt`) VALUES
 -- Estructura de tabla para la tabla `templates`
 --
 -- Creación: 20-07-2016 a las 14:01:50
--- Última actualización: 26-07-2016 a las 15:26:06
+-- Última actualización: 28-07-2016 a las 11:02:03
 --
 
 CREATE TABLE `templates` (
@@ -1334,22 +1361,22 @@ CREATE TABLE `templates` (
 
 INSERT INTO `templates` (`id`, `name`, `fieldgroups_id`, `flags`, `cache_time`, `data`) VALUES
 (2, 'admin', 2, 8, 0, '{"useRoles":1,"parentTemplates":[2],"allowPageNum":1,"redirectLogin":23,"slashUrls":1,"noGlobal":1,"compile":3,"modified":1467939476,"ns":"ProcessWire"}'),
-(3, 'user', 3, 8, 0, '{"useRoles":1,"noChildren":1,"parentTemplates":[2],"slashUrls":1,"pageClass":"User","noGlobal":1,"noMove":1,"noTrash":1,"noSettings":1,"noChangeTemplate":1,"compile":3,"nameContentTab":1,"modified":1469304278}'),
+(3, 'user', 3, 8, 0, '{"useRoles":1,"noChildren":1,"parentTemplates":[2],"slashUrls":1,"pageClass":"User","noGlobal":1,"noMove":1,"noTrash":1,"noSettings":1,"noChangeTemplate":1,"compile":3,"nameContentTab":1,"modified":1469703698}'),
 (4, 'role', 4, 8, 0, '{"noChildren":1,"parentTemplates":[2],"slashUrls":1,"pageClass":"Role","noGlobal":1,"noMove":1,"noTrash":1,"noSettings":1,"noChangeTemplate":1,"nameContentTab":1}'),
 (5, 'permission', 5, 8, 0, '{"noChildren":1,"parentTemplates":[2],"slashUrls":1,"guestSearchable":1,"pageClass":"Permission","noGlobal":1,"noMove":1,"noTrash":1,"noSettings":1,"noChangeTemplate":1,"nameContentTab":1}'),
-(1, 'home', 1, 0, 0, '{"useRoles":1,"noParents":1,"allowPageNum":1,"slashUrls":1,"compile":3,"tags":"site","modified":1469536685,"ns":"Processwire","roles":[37]}'),
+(1, 'home', 1, 0, 0, '{"useRoles":1,"noParents":1,"allowPageNum":1,"slashUrls":1,"compile":3,"tags":"site","modified":1469703014,"ns":"Processwire","roles":[37]}'),
 (29, 'basic-page', 83, 0, 0, '{"childTemplates":[29],"parentTemplates":[29,1],"slashUrls":1,"compile":3,"modified":1469546764,"ns":"Processwire"}'),
 (43, 'language', 97, 8, 0, '{"parentTemplates":[2],"slashUrls":1,"pageClass":"Language","pageLabelField":"name","noGlobal":1,"noMove":1,"noTrash":1,"noChangeTemplate":1,"noUnpublish":1,"compile":3,"nameContentTab":1,"modified":1469023358}'),
 (44, 'menu', 98, 0, 0, '{"noParents":-1,"childTemplates":[45],"parentTemplates":[1],"slashUrls":1,"compile":3,"tags":"menu","modified":1469295314}'),
 (45, 'menu-item', 99, 0, 0, '{"childTemplates":[45],"parentTemplates":[44,45],"slashUrls":1,"compile":3,"tags":"menu","modified":1469295324}'),
 (46, 'tags', 100, 0, 0, '{"noParents":-1,"childTemplates":[47],"parentTemplates":[1],"slashUrls":1,"compile":3,"tags":"blog","modified":1469534812,"ns":"Processwire"}'),
-(47, 'tag-item', 101, 0, 0, '{"useRoles":1,"editRoles":[1032],"createRoles":[1032],"childTemplates":[47],"parentTemplates":[47,46],"allowPageNum":1,"slashUrls":1,"compile":3,"tags":"blog","modified":1469536750,"ns":"Processwire","roles":[37,1032]}'),
+(47, 'tag-item', 101, 0, 0, '{"useRoles":1,"editRoles":[1032],"createRoles":[1032],"childTemplates":[47],"parentTemplates":[47,46],"allowPageNum":1,"slashUrls":1,"compile":3,"tags":"blog","modified":1469556153,"ns":"Processwire","roles":[37,1032]}'),
 (48, 'classes', 102, 0, 0, '{"noParents":-1,"parentTemplates":[1],"slashUrls":1,"compile":3,"tags":"blog","modified":1469304346}'),
 (49, 'class-item', 103, 0, 0, '{"childTemplates":[49],"parentTemplates":[49,48],"slashUrls":1,"compile":3,"tags":"blog","modified":1469304397}'),
 (50, 'blog', 104, 0, 0, '{"noParents":-1,"childTemplates":[51],"parentTemplates":[1],"allowPageNum":1,"slashUrls":1,"compile":3,"tags":"blog","modified":1469534833,"ns":"Processwire"}'),
-(51, 'blog-item', 105, 0, 0, '{"useRoles":1,"editRoles":[1032],"createRoles":[1032],"noInherit":1,"noChildren":1,"parentTemplates":[50],"slashUrls":1,"compile":3,"tags":"blog","modified":1469535455,"ns":"Processwire","roles":[37,1032]}'),
+(51, 'blog-item', 105, 0, 0, '{"useRoles":1,"editRoles":[1032],"createRoles":[1032],"noInherit":1,"noChildren":1,"parentTemplates":[50],"slashUrls":1,"compile":3,"tags":"blog","modified":1469703434,"ns":"Processwire","roles":[37,1032]}'),
 (52, 'meta', 106, 0, 0, '{"noChildren":1,"noParents":-1,"parentTemplates":[1],"slashUrls":1,"compile":3,"tags":"site","modified":1469307075}'),
-(53, 'authors', 107, 0, 0, '{"noChildren":1,"noParents":-1,"parentTemplates":[1],"allowPageNum":1,"urlSegments":1,"slashUrls":1,"compile":3,"tags":"blog","modified":1469536669,"ns":"Processwire"}'),
+(53, 'authors', 107, 0, 0, '{"noChildren":1,"noParents":-1,"parentTemplates":[1],"allowPageNum":1,"urlSegments":1,"slashUrls":1,"compile":3,"tags":"blog","modified":1469703388,"ns":"Processwire"}'),
 (54, 'rss', 108, 0, 0, '{"noChildren":1,"noParents":-1,"parentTemplates":[1],"slashUrls":1,"compile":3,"tags":"site","modified":1469537002,"ns":"Processwire"}'),
 (55, '404', 109, 0, 0, '{"noChildren":1,"noParents":-1,"slashUrls":1,"compile":3,"tags":"site","modified":1469540281,"ns":"Processwire"}');
 
@@ -1524,6 +1551,14 @@ ALTER TABLE `field_logo`
   ADD FULLTEXT KEY `description` (`description`);
 
 --
+-- Indices de la tabla `field_nickname`
+--
+ALTER TABLE `field_nickname`
+  ADD PRIMARY KEY (`pages_id`),
+  ADD KEY `data_exact` (`data`(250)),
+  ADD FULLTEXT KEY `data` (`data`);
+
+--
 -- Indices de la tabla `field_pass`
 --
 ALTER TABLE `field_pass`
@@ -1675,7 +1710,7 @@ ALTER TABLE `fieldgroups`
 -- AUTO_INCREMENT de la tabla `fields`
 --
 ALTER TABLE `fields`
-  MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=119;
+  MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=120;
 --
 -- AUTO_INCREMENT de la tabla `modules`
 --

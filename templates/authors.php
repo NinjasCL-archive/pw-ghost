@@ -1,9 +1,9 @@
 <?php
 namespace Processwire;
 
-$author = wire('sanitizer')->name(wire('input')->urlSegment(1));
+$author = wire('sanitizer')->text(wire('input')->urlSegment(1));
 
-$author = wire('pages')->get("template=user, name=$author");
+$author = wire('pages')->get("template=user, nickname=$author");
 
 if (!$author || ($author instanceof NullPage)) {
 	throw new Wire404Exception();	

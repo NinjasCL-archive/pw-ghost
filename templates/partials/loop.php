@@ -31,7 +31,7 @@ $language = wire('user')->language;
         
         <?php if($author->picture->url): ?><img class="author-thumb" src="<?php echo $author->picture->url ?>" alt="<?php echo $author->fullname ?>" nopin="nopin" /><?php endif ?>
         
-        <a href="<?php echo $authors->localHttpUrl($language) . $author->name ?>"><?php echo $author->fullname ?></a>
+        <a href="<?php echo $authors->localHttpUrl($language) . $author->nickname ?>"><?php echo $author->fullname ?></a>
         
         <?php echo wireRenderFile('partials/tags', ['items' => $post->tags]) ?>
 
