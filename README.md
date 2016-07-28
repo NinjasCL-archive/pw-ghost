@@ -14,6 +14,8 @@ Supports Multilanguage.
 - Copy files to site/ directory
 - Setup `config.php`
 
+Be sure to set the `htaccess` file in your installation. Translation to spanish available in the file `es-site.zip`.
+
 ## Admin
 ```
 /astral
