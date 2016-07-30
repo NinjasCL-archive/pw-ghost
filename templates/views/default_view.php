@@ -1,7 +1,7 @@
 <?php
 namespace Processwire;
 
-if (!$canonical) {
+if (empty($canonical)) {
     $canonical = wire('page')->httpUrl;
 }
 

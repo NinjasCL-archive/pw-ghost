@@ -1,7 +1,7 @@
 <?php 
 namespace Processwire;
 
-$params['cover'] = $page->cover->url;
+$params['cover'] = $cover->url;
 $params['title'] = $page->title;
 
 $params['description'] = ($page->about != '' ? $page->about : sprintf(__('A %d-post collection'),

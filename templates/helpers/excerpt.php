@@ -18,7 +18,7 @@ function excerpt($text = '', $number_of_words = 26, $include_dots = true) {
    $result =  str_replace("\n", "", $text);
 
    if ($include_dots) {
-   		$result = $result . ' ...';
+   		$result = $result . ' ... ';
    }
 
    return $result;

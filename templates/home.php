@@ -1,7 +1,7 @@
 <?php
 namespace Processwire;
 
-$params['cover'] = $page->cover->url;
+$params['cover'] = $cover->url;
 $params['title'] = $page->title;
 $params['description'] = $page->about;
 $params['blog_url'] = $blog_url;

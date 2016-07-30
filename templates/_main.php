@@ -22,7 +22,9 @@ if (!$view || $view == 'default') {
 	$headerBag[] = wireRenderFile('partials/header_bag/twitter_card', $twitterCardBag);
 	$headerBag[] = wireRenderFile('partials/header_bag/ld_json', $ldJsonBag);
 
-	$meta_title = $meta->title . ' | ' . $title;
+	if ($page->template != 'home') {
+		$meta_title = $blog_title . ' | ' . $title;
+	}
 
 	$viewBag['meta_title'] = $meta_title;
 	$viewBag['meta_description'] = $meta_description;

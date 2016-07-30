@@ -24,7 +24,9 @@ $meta_description = (($page->about && $page->about != '') ? $page->about : $meta
 
 $blog = $pages->get('template=blog');
 
-$blog_title = $meta->title;
+$blog_title = $home->title;
+
+$meta_title = $blog_title;
 
 $blog_url = $home->httpUrl;
 
@@ -87,27 +89,32 @@ $viewBag = ['home' => $home,
 			'favicon' => $meta->favicon->url
 			];
 
+$cover = $page->get('cover');
+
+if(empty($cover)){
+	$cover = new NullPage;
+}
 
 $facebookOgBag = [
-	'meta_title' => $blog_title,
+	'meta_title' => $meta_title,
 	'title' => $title,
 	'description' => $meta_description,
 	'url' => $page->httpUrl,
-	'image' => $page->cover->httpUrl
+	'image' => $cover->httpUrl
 ];
 
 $twitterCardBag = [
-	'meta_title' => $blog_title,
+	'meta_title' => $meta_title,
 	'title' => $title,
 	'description' => $meta_description,
 	'url' => $page->httpUrl,
-	'image' => $page->cover->httpUrl
+	'image' => $cover->httpUrl
 ];
 
 $ldJsonBag = [
-	'meta_title' => $blog_title,
+	'meta_title' => $meta_title,
 	'title' => $title,
 	'description' => $meta_description,
 	'url' => $page->httpUrl,
-	'image' => $page->cover->httpUrl
+	'image' => $cover->httpUrl
 ];

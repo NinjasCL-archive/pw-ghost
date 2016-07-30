@@ -21,7 +21,13 @@ if ($totalPosts > 1) {
     $message = sprintf(__('%d posts'), $totalPosts);
 }
 
-$params['cover'] = $author->cover->url;
+$cover = $author->get('cover');
+
+if (empty($cover)) {
+	$cover = new NullPage;
+}
+
+$params['cover'] = $cover->url;
 $params['blog_url'] = $blog_url;
 $params['logo'] = $blog_logo;
 $params['show_navigation'] = true;

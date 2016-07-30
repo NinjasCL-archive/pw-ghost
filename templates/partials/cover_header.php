@@ -5,19 +5,31 @@ include_once __DIR__ . '/../helpers/background_cover.php';
 
 $cover = \Helpers\cover($cover);
 
-if(!$title) {
+if(empty($title)) {
     $title = '';
 }
 
-if (!$description) {
+if (empty($description)) {
     $description = '';
 }
 
-if(!$type) {
+if(empty($type)) {
     $type = '';
 }
 
-if($logo->url) {
+if (!isset($show_vertical_info)) {
+    $show_vertical_info = true;
+}
+
+if (!isset($show_navigation)) {
+    $show_navigation = true;
+}
+
+if (empty($logo)) {
+    $logo = new NullPage;
+}
+
+if($logo->get('url') && $logo->url != '') {
     $logo = '<a class="blog-logo" href="' . $blog_url . '"><img src="' . $logo->url . '" alt="' . $title . '" /></a>';
 }
 
