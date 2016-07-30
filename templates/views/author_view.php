@@ -1,13 +1,23 @@
 <?php
 namespace Processwire;
+
+if (empty($author)) {
+    $author = new NullPage;
+}
+
+$author_image = $author->get('picture');
+
+if (empty($author_image)) {
+    $author_image = new NullPage;
+}
 ?>
 
 <?php echo wireRenderFile('partials/cover_header', $header_params) ?>
 
 <section class="author-profile inner">
-        <?php if($author->picture): ?>
+        <?php if(!($author_picture instanceof NullPage)): ?>
         <figure class="author-image">
-            <div class="img" style="background-image: url(<?php echo $author->picture->url ?>)"><span class="hidden"><?php echo sprintf(__("%s's Picture"), $author->fullname) ?></span></div>
+            <div class="img" style="background-image: url(<?php echo $author_image->url ?>)"><span class="hidden"><?php echo sprintf(__("%s's Picture"), $author->fullname) ?></span></div>
         </figure>
         <?php endif ?>
         <h1 class="author-title"><?php echo $author->fullname ?></h1>

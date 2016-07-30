@@ -5,7 +5,7 @@ $author = wire('sanitizer')->text(wire('input')->urlSegment(1));
 
 $author = wire('pages')->get("template=user, nickname=$author");
 
-if (!$author || ($author instanceof NullPage)) {
+if (empty($author) || ($author instanceof NullPage)) {
 	throw new Wire404Exception();	
 }
 

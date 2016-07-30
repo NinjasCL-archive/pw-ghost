@@ -16,7 +16,21 @@ $language = wire('user')->language;
 <!-- This is the post loop - each post will be output using this markup -->
 <?php foreach($posts as $post): ?>
     
-<?php $author = $post->author ?>
+<?php 
+
+$author = $post->author;
+
+if (empty($author)) {
+    $author = new NullPage;
+}
+
+$author_image = $author->get('picture');
+
+if (empty($author_image)) {
+    $author_image = new NullPage;
+}
+
+?>
 
 <?php $class = ($post->class->name != '' ? $post->class->name : 'post') ?>
 
@@ -29,7 +43,7 @@ $language = wire('user')->language;
     </section>
     <footer class="post-meta">
         
-        <?php if($author->picture->url): ?><img class="author-thumb" src="<?php echo $author->picture->url ?>" alt="<?php echo $author->fullname ?>" nopin="nopin" /><?php endif ?>
+        <?php if($author_image->url != ''): ?><img class="author-thumb" src="<?php echo $author_image->url ?>" alt="<?php echo $author->fullname ?>" nopin="nopin" /><?php endif ?>
         
         <a href="<?php echo $authors->localHttpUrl($language) . $author->nickname ?>"><?php echo $author->fullname ?></a>
         
