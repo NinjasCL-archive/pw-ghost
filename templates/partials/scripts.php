@@ -1,4 +1,5 @@
 <?php
+namespace Processwire;
 /**
 * partials/render_scripts.php
 */

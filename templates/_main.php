@@ -1,4 +1,5 @@
 <?php
+namespace Processwire;
 /**
 * Main file
 * This file renders the content
