@@ -59,7 +59,7 @@ if (empty($canonical)) {
     </div>
 
     <!-- jQuery needs to come before footer scripts so that jQuery can be used in code injection -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
     
     <?php echo wireRenderFile('partials/scripts', ['items' => $footer_bag]) ?>
 
